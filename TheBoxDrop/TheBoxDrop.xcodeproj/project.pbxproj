@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1369C3A868913DE9CC52DE6 /* Pods_TheBoxDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */; };
+		C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C15235749A9003416B0 /* AppDelegate.swift */; };
+		C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C17235749A9003416B0 /* SceneDelegate.swift */; };
+		C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C19235749A9003416B0 /* ViewController.swift */; };
+		C5B86C1D235749A9003416B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1B235749A9003416B0 /* Main.storyboard */; };
+		C5B86C1F235749AB003416B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1E235749AB003416B0 /* Assets.xcassets */; };
+		C5B86C22235749AB003416B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBoxDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.debug.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B86C12235749A9003416B0 /* TheBoxDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBoxDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		C5B86C17235749A9003416B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		C5B86C19235749A9003416B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5B86C1C235749A9003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5B86C1E235749AB003416B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5B86C21235749AB003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5B86C23235749AB003416B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.release.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5B86C0F235749A9003416B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1369C3A868913DE9CC52DE6 /* Pods_TheBoxDrop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1423712D47A5E69382D8496A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */,
+				D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9FDB6F5A68D5DE9103D0D7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5B86C09235749A9003416B0 = {
+			isa = PBXGroup;
+			children = (
+				C5B86C14235749A9003416B0 /* TheBoxDrop */,
+				C5B86C13235749A9003416B0 /* Products */,
+				1423712D47A5E69382D8496A /* Pods */,
+				9FDB6F5A68D5DE9103D0D7B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5B86C13235749A9003416B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5B86C12235749A9003416B0 /* TheBoxDrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5B86C14235749A9003416B0 /* TheBoxDrop */ = {
+			isa = PBXGroup;
+			children = (
+				C5B86C19235749A9003416B0 /* ViewController.swift */,
+				C5B86C1B235749A9003416B0 /* Main.storyboard */,
+				C5B86C2923574A85003416B0 /* Supporting Files */,
+				C5B86C23235749AB003416B0 /* Info.plist */,
+			);
+			path = TheBoxDrop;
+			sourceTree = "<group>";
+		};
+		C5B86C2923574A85003416B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5B86C15235749A9003416B0 /* AppDelegate.swift */,
+				C5B86C17235749A9003416B0 /* SceneDelegate.swift */,
+				C5B86C1E235749AB003416B0 /* Assets.xcassets */,
+				C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5B86C11235749A9003416B0 /* TheBoxDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B86C26235749AB003416B0 /* Build configuration list for PBXNativeTarget "TheBoxDrop" */;
+			buildPhases = (
+				A724D9FDB32E75D4955F5184 /* [CP] Check Pods Manifest.lock */,
+				C5B86C0E235749A9003416B0 /* Sources */,
+				C5B86C0F235749A9003416B0 /* Frameworks */,
+				C5B86C10235749A9003416B0 /* Resources */,
+				651B18BE0F247551D9BF8477 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheBoxDrop;
+			productName = TheBoxDrop;
+			productReference = C5B86C12235749A9003416B0 /* TheBoxDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5B86C0A235749A9003416B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Madalina Sinca";
+				TargetAttributes = {
+					C5B86C11235749A9003416B0 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = C5B86C0D235749A9003416B0 /* Build configuration list for PBXProject "TheBoxDrop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5B86C09235749A9003416B0;
+			productRefGroup = C5B86C13235749A9003416B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5B86C11235749A9003416B0 /* TheBoxDrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5B86C10235749A9003416B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B86C22235749AB003416B0 /* LaunchScreen.storyboard in Resources */,
+				C5B86C1F235749AB003416B0 /* Assets.xcassets in Resources */,
+				C5B86C1D235749A9003416B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		651B18BE0F247551D9BF8477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A724D9FDB32E75D4955F5184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheBoxDrop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5B86C0E235749A9003416B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */,
+				C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */,
+				C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5B86C1B235749A9003416B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5B86C1C235749A9003416B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5B86C21235749AB003416B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5B86C24235749AB003416B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5B86C25235749AB003416B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5B86C27235749AB003416B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
+				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5B86C28235749AB003416B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
+				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5B86C0D235749A9003416B0 /* Build configuration list for PBXProject "TheBoxDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B86C24235749AB003416B0 /* Debug */,
+				C5B86C25235749AB003416B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5B86C26235749AB003416B0 /* Build configuration list for PBXNativeTarget "TheBoxDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B86C27235749AB003416B0 /* Debug */,
+				C5B86C28235749AB003416B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5B86C0A235749A9003416B0 /* Project object */;
+}
