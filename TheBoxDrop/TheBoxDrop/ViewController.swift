@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import SwiftyDropbox
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func connectViaDropboxButtonPressed(_ sender: UIButton) {
+        DropboxClientsManager.authorizeFromController(UIApplication.shared,
+        controller: self,
+        openURL: { (url: URL) -> Void in
+          UIApplication.shared.openURL(url)
+        })
     }
-
-
 }
 

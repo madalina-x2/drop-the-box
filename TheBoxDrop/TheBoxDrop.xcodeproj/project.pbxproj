@@ -3,30 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C1369C3A868913DE9CC52DE6 /* Pods_TheBoxDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */; };
-		C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C15235749A9003416B0 /* AppDelegate.swift */; };
-		C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C17235749A9003416B0 /* SceneDelegate.swift */; };
-		C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C19235749A9003416B0 /* ViewController.swift */; };
 		C5B86C1D235749A9003416B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1B235749A9003416B0 /* Main.storyboard */; };
 		C5B86C1F235749AB003416B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1E235749AB003416B0 /* Assets.xcassets */; };
 		C5B86C22235749AB003416B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */; };
+		C5B86C2D2357562F003416B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C19235749A9003416B0 /* ViewController.swift */; };
+		C5B86C2E2357562F003416B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C15235749A9003416B0 /* AppDelegate.swift */; };
+		C5B86C2F2357562F003416B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C2A23575406003416B0 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBoxDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.debug.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B86C12235749A9003416B0 /* TheBoxDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBoxDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		C5B86C17235749A9003416B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B86C19235749A9003416B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B86C1C235749A9003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B86C1E235749AB003416B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B86C21235749AB003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B86C23235749AB003416B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B86C2A23575406003416B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.release.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +48,6 @@
 				AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */,
 				D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,8 +82,8 @@
 			children = (
 				C5B86C19235749A9003416B0 /* ViewController.swift */,
 				C5B86C1B235749A9003416B0 /* Main.storyboard */,
-				C5B86C2923574A85003416B0 /* Supporting Files */,
 				C5B86C23235749AB003416B0 /* Info.plist */,
+				C5B86C2923574A85003416B0 /* Supporting Files */,
 			);
 			path = TheBoxDrop;
 			sourceTree = "<group>";
@@ -92,9 +91,9 @@
 		C5B86C2923574A85003416B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5B86C15235749A9003416B0 /* AppDelegate.swift */,
-				C5B86C17235749A9003416B0 /* SceneDelegate.swift */,
 				C5B86C1E235749AB003416B0 /* Assets.xcassets */,
+				C5B86C2A23575406003416B0 /* SceneDelegate.swift */,
+				C5B86C15235749A9003416B0 /* AppDelegate.swift */,
 				C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -215,9 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */,
-				C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */,
-				C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */,
+				C5B86C2D2357562F003416B0 /* ViewController.swift in Sources */,
+				C5B86C2E2357562F003416B0 /* AppDelegate.swift in Sources */,
+				C5B86C2F2357562F003416B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,15 +361,18 @@
 			baseConfigurationReference = AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,15 +383,18 @@
 			baseConfigurationReference = D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
