@@ -18,6 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DropboxClientsManager.setupWithAppKey("ii4so3zz93pwynb")
         return true
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let authResult = DropboxClientsManager.handleRedirectURL(url) {
+            switch authResult {
+            case .success:
+                print("Success! User is logged into Dropbox.")
+            case .cancel:
+                print("Authorization flow was manually canceled by user!")
+            case .error(_, let description):
+                print("Error: \(description)")
+            }
+        }
+        return true
+    }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
