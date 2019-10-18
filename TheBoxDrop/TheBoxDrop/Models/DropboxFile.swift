@@ -10,11 +10,16 @@ import Foundation
 import SwiftyDropbox
 
 class DropboxFile {
+    
+    // MARK: - Properties
+    
     var fileName: String!
     var isFolder: Bool!
     var nestingLevel: Int!
     var parentNames: [String]! = []
     var containingFiles: [DropboxFile] = []
+    
+    // MARK: - Initializers
     
     init(from file: Files.Metadata) {
         self.fileName = file.name.lowercased()
@@ -27,6 +32,8 @@ class DropboxFile {
         
         self.nestingLevel = computeNestingLevel(from: file.pathLower!.lowercased())
     }
+    
+    // MARK: - Auxiliary Methods
     
     func computeNestingLevel(from path: String) -> Int {
         if path == "/" + self.fileName {

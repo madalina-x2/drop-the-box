@@ -11,6 +11,8 @@ import SwiftyDropbox
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+    
     var dropboxFiles: [DropboxFile] = []
     var readyToDisplayFiles: Bool = false {
         didSet {
@@ -22,42 +24,7 @@ class ViewController: UIViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        if let client = DropboxClientsManager.authorizedClient {
-            
-            _ = client.files.listFolder(path: "", recursive: true).response(completionHandler: { (response, error) in
-                if let result = response {
-                    //print("Folder Contents: \(result.entries)")
-                    
-                    for entry in result.entries {
-                        let dropboxFile = DropboxFile(from: entry)
-                        self.dropboxFiles.append(dropboxFile)
-                    }
-                    
-                    self.dropboxFiles = self.dropboxFiles.sortInDecreasingOrder(by: \.nestingLevel)
-                    
-                    for dropboxFile in self.dropboxFiles {
-                        guard let parentName = dropboxFile.parentNames.first else {
-                            break
-                        }
-                        guard let parent = self.dropboxFiles.first(where: { $0.fileName == parentName}) else {
-                            break
-                        }
-                        
-                        parent.containingFiles.append(dropboxFile)
-
-                    }
-                    
-                    self.dropboxFiles = self.dropboxFiles.filter( { $0.nestingLevel == 0 } )
-                    
-                    self.readyToDisplayFiles = true
-                } else {
-                    print("Error: \(error!)")
-                }
-            })
-        }
-    }
+    // MARK: - Actions
     
     @IBAction func connectViaDropboxButtonPressed(_ sender: UIButton) {
         DropboxClientsManager.authorizeFromController(UIApplication.shared,
@@ -66,38 +33,46 @@ class ViewController: UIViewController {
                                                         UIApplication.shared.open(url, options: [:], completionHandler: nil)
         })
     }
-}
-
-extension String {
-    func replace(string:String, replacement:String) -> String {
-        return self.replacingOccurrences(of: string, with: replacement, options: NSString.CompareOptions.literal, range: nil)
-    }
     
-    func removeWhitespaces() -> String {
-        return self.replace(string: " ", replacement: "")
-    }
+    // MARK: - Lifecycle Methods
     
-    func trimLastItem() -> String {
-        guard let trimmingIndex = self.lastIndex(of: "/"), self.lastIndex(of: "/") != self.startIndex else {
-            return ""
-        }
-        let range = self.startIndex..<trimmingIndex
-        return String(self[range])
-    }
-    
-    func extractLastItem() -> String {
-        let extractionIndex = self.lastIndex(of: "/")!
-        let range = index(after: extractionIndex)..<self.endIndex
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        return String(self[range])
-    }
-}
-
-extension Array {
-    func sortInDecreasingOrder<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
-        return sorted { a, b in
-            return a[keyPath: keyPath] > b[keyPath: keyPath]
+        if let client = DropboxClientsManager.authorizedClient {
+            fetchFiles(from: client)
         }
+    }
+    
+    // MARK: - Auxiliary Methods
+    
+    func fetchFiles(from client: DropboxClient) {
+        _ = client.files.listFolder(path: "", recursive: true).response(completionHandler: { (response, error) in
+            guard let result = response else {
+                print("Error: \(error!)")
+                return
+            }
+            
+            for entry in result.entries {
+                let dropboxFile = DropboxFile(from: entry)
+                self.dropboxFiles.append(dropboxFile)
+            }
+            
+            self.dropboxFiles = self.dropboxFiles.sortInDecreasingOrder(by: \.nestingLevel)
+            
+            for dropboxFile in self.dropboxFiles {
+                guard let parentName = dropboxFile.parentNames.first else {
+                    break
+                }
+                guard let parent = self.dropboxFiles.first(where: { $0.fileName == parentName}) else {
+                    break
+                }
+                parent.containingFiles.append(dropboxFile)
+            }
+            
+            self.dropboxFiles = self.dropboxFiles.filter( { $0.nestingLevel == 0 } )
+            self.readyToDisplayFiles = true
+        })
     }
 }
 

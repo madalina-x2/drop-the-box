@@ -10,8 +10,12 @@ import UIKit
 
 class DropboxFileCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var fileNameLabel: UILabel!
     @IBOutlet weak var fileIconImageView: UIImageView!
+    
+    // MARK: - Auxiliary Methods
     
     func populateWith(dropboxFile: DropboxFile) {
         fileNameLabel.text = dropboxFile.fileName

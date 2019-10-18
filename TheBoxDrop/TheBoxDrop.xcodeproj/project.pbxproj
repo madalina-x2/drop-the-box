@@ -11,6 +11,8 @@
 		C551A89C23589C3200FA655A /* DropboxFileDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A89B23589C3200FA655A /* DropboxFileDisplayViewController.swift */; };
 		C551A8A32358B85700FA655A /* DropboxFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A8A22358B85700FA655A /* DropboxFile.swift */; };
 		C551A8A52358BA3100FA655A /* DropboxFileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A8A42358BA3100FA655A /* DropboxFileCollectionViewCell.swift */; };
+		C5AB4D25235A03170017EE7F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB4D24235A03170017EE7F /* StringExtensions.swift */; };
+		C5AB4D27235A03560017EE7F /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */; };
 		C5B86C1D235749A9003416B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1B235749A9003416B0 /* Main.storyboard */; };
 		C5B86C1F235749AB003416B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1E235749AB003416B0 /* Assets.xcassets */; };
 		C5B86C22235749AB003416B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */; };
@@ -25,6 +27,8 @@
 		C551A89B23589C3200FA655A /* DropboxFileDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFileDisplayViewController.swift; sourceTree = "<group>"; };
 		C551A8A22358B85700FA655A /* DropboxFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFile.swift; sourceTree = "<group>"; };
 		C551A8A42358BA3100FA655A /* DropboxFileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFileCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AB4D24235A03170017EE7F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		C5B86C12235749A9003416B0 /* TheBoxDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBoxDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B86C19235749A9003416B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C5AB4D23235A02FC0017EE7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AB4D24235A03170017EE7F /* StringExtensions.swift */,
+				C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C5B86C09235749A9003416B0 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,7 @@
 				C551A8A12358B84100FA655A /* Models */,
 				C551A89F2358B7E600FA655A /* Controllers */,
 				C551A8A02358B83400FA655A /* Views */,
+				C5AB4D23235A02FC0017EE7F /* Extensions */,
 				C5B86C23235749AB003416B0 /* Info.plist */,
 				C5B86C2923574A85003416B0 /* Supporting Files */,
 			);
@@ -250,9 +264,11 @@
 				C551A89C23589C3200FA655A /* DropboxFileDisplayViewController.swift in Sources */,
 				C5B86C2D2357562F003416B0 /* ViewController.swift in Sources */,
 				C5B86C2E2357562F003416B0 /* AppDelegate.swift in Sources */,
+				C5AB4D25235A03170017EE7F /* StringExtensions.swift in Sources */,
 				C551A8A52358BA3100FA655A /* DropboxFileCollectionViewCell.swift in Sources */,
 				C551A8A32358B85700FA655A /* DropboxFile.swift in Sources */,
 				C5B86C2F2357562F003416B0 /* SceneDelegate.swift in Sources */,
+				C5AB4D27235A03560017EE7F /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
