@@ -20,6 +20,7 @@ class ViewController: UIViewController {
                 fatalError("could not create view controller")
             }
             fileDisplayViewController.files = dropboxFiles
+            fileDisplayViewController.currentFolderName = "Dropbox root folder"
             self.present(fileDisplayViewController, animated: false, completion: nil)
         }
     }

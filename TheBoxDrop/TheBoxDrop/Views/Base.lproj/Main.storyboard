@@ -50,8 +50,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6b-Ah-5oa">
-                                <rect key="frame" x="256" y="44" width="138" height="30"/>
-                                <state key="normal" title="Log Out Of Dropbox"/>
+                                <rect key="frame" x="339" y="44" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutButtonPressed:" destination="N8e-n5-rNy" eventType="touchUpInside" id="9lp-tG-rqf"/>
                                 </connections>
@@ -66,11 +66,11 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dropboxFileCell" id="eVk-uI-0w7" customClass="DropboxFileCollectionViewCell" customModule="TheBoxDrop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dropboxFileCell" id="eVk-uI-0w7" customClass="DropboxFileCollectionViewCell" customModule="TheBoxDrop" customModuleProvider="target">
+                                        <rect key="frame" x="37" y="0.0" width="300" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5CW-PW-qBV">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwP-yk-K5f">
@@ -84,20 +84,20 @@
                                                     <color key="backgroundColor" red="0.94837313889999997" green="0.92213070389999996" blue="0.35052698850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="9Yq-pN-34U"/>
+                                                        <constraint firstAttribute="height" constant="20" id="m9E-QP-cTC"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="aSW-mT-78O" firstAttribute="top" secondItem="jwP-yk-K5f" secondAttribute="top" id="98K-Kn-Qhg"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jwP-yk-K5f" secondAttribute="trailing" constant="20" symbolic="YES" id="CPd-GG-sD7"/>
+                                                <constraint firstItem="aSW-mT-78O" firstAttribute="centerY" secondItem="5CW-PW-qBV" secondAttribute="centerY" id="O32-SN-K7n"/>
                                                 <constraint firstItem="aSW-mT-78O" firstAttribute="leading" secondItem="5CW-PW-qBV" secondAttribute="leading" constant="20" id="SeU-DT-GBd"/>
                                                 <constraint firstItem="jwP-yk-K5f" firstAttribute="leading" secondItem="aSW-mT-78O" secondAttribute="trailing" constant="20" id="btH-tG-DG8"/>
                                                 <constraint firstItem="jwP-yk-K5f" firstAttribute="centerY" secondItem="5CW-PW-qBV" secondAttribute="centerY" id="dGK-VG-Ap9"/>
-                                                <constraint firstItem="aSW-mT-78O" firstAttribute="centerY" secondItem="5CW-PW-qBV" secondAttribute="centerY" id="uAT-ZC-MpZ"/>
-                                                <constraint firstItem="aSW-mT-78O" firstAttribute="top" secondItem="5CW-PW-qBV" secondAttribute="top" constant="20" id="ul6-JZ-gLe"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="374" height="60"/>
+                                        <color key="backgroundColor" red="0.99994784593582153" green="1" blue="0.9998740553855896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="300" height="60"/>
                                         <connections>
                                             <outlet property="fileIconImageView" destination="aSW-mT-78O" id="iWH-1d-yP1"/>
                                             <outlet property="fileNameLabel" destination="jwP-yk-K5f" id="DXy-39-6Lc"/>
@@ -109,21 +109,41 @@
                                     <outlet property="delegate" destination="N8e-n5-rNy" id="OE5-7V-5Db"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRt-Jj-R0c">
+                                <rect key="frame" x="20" y="44" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="didPressBackButton:" destination="N8e-n5-rNy" eventType="touchUpInside" id="rOB-9K-eVc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current folder name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-Qm-JAh">
+                                <rect key="frame" x="131.5" y="44" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xfD-Yn-9w5" firstAttribute="leading" secondItem="IxH-5a-I6L" secondAttribute="leading" constant="20" id="2Qf-JQ-enN"/>
+                            <constraint firstItem="xfD-Yn-9w5" firstAttribute="top" secondItem="XRt-Jj-R0c" secondAttribute="bottom" constant="10" id="Ah6-1h-dVl"/>
+                            <constraint firstItem="zgb-Qm-JAh" firstAttribute="top" secondItem="IxH-5a-I6L" secondAttribute="top" id="IO5-nA-zLf"/>
+                            <constraint firstItem="xfD-Yn-9w5" firstAttribute="top" secondItem="zgb-Qm-JAh" secondAttribute="bottom" constant="10" id="R8h-Cy-370"/>
                             <constraint firstItem="xfD-Yn-9w5" firstAttribute="top" secondItem="s6b-Ah-5oa" secondAttribute="bottom" constant="10" id="Rx8-y3-1RT"/>
                             <constraint firstItem="IxH-5a-I6L" firstAttribute="trailing" secondItem="s6b-Ah-5oa" secondAttribute="trailing" constant="20" id="a4q-bQ-5uf"/>
+                            <constraint firstItem="XRt-Jj-R0c" firstAttribute="leading" secondItem="IxH-5a-I6L" secondAttribute="leading" constant="20" id="fOa-jr-Cvw"/>
                             <constraint firstItem="IxH-5a-I6L" firstAttribute="trailing" secondItem="xfD-Yn-9w5" secondAttribute="trailing" constant="20" id="gfm-lT-UgR"/>
+                            <constraint firstItem="XRt-Jj-R0c" firstAttribute="top" secondItem="IxH-5a-I6L" secondAttribute="top" id="kWt-7b-Wu4"/>
                             <constraint firstItem="s6b-Ah-5oa" firstAttribute="top" secondItem="IxH-5a-I6L" secondAttribute="top" id="m6I-0V-aeh"/>
                             <constraint firstItem="IxH-5a-I6L" firstAttribute="bottom" secondItem="xfD-Yn-9w5" secondAttribute="bottom" id="pGi-lK-nEP"/>
+                            <constraint firstItem="zgb-Qm-JAh" firstAttribute="centerX" secondItem="IxH-5a-I6L" secondAttribute="centerX" id="qAh-8g-PGP"/>
                             <constraint firstItem="s6b-Ah-5oa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IxH-5a-I6L" secondAttribute="leading" symbolic="YES" id="ymu-Hz-GLe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IxH-5a-I6L"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="xfD-Yn-9w5" id="0zr-jM-AFB"/>
+                        <outlet property="currentFolderNameLabel" destination="zgb-Qm-JAh" id="H68-7r-b4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZM-pY-9h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

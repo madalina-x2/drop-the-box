@@ -17,6 +17,7 @@ class DropboxFileCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Auxiliary Methods
     
+    
     func populateWith(dropboxFile: DropboxFile) {
         fileNameLabel.text = dropboxFile.fileName
         if dropboxFile.isFolder {
@@ -25,5 +26,4 @@ class DropboxFileCollectionViewCell: UICollectionViewCell {
             fileIconImageView.image = #imageLiteral(resourceName: "document_icon")
         }
     }
-    
 }
