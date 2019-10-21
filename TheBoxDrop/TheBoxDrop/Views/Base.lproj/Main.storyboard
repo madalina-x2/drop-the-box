@@ -142,6 +142,7 @@
                         <viewLayoutGuide key="safeArea" id="IxH-5a-I6L"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="XRt-Jj-R0c" id="E0p-1f-To0"/>
                         <outlet property="collectionView" destination="xfD-Yn-9w5" id="0zr-jM-AFB"/>
                         <outlet property="currentFolderNameLabel" destination="zgb-Qm-JAh" id="H68-7r-b4r"/>
                     </connections>

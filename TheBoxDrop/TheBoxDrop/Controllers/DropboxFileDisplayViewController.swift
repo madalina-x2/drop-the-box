@@ -37,11 +37,14 @@ class DropboxFileDisplayViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var currentFolderNameLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     // MARK: - Actions
     
     @IBAction func logOutButtonPressed(_ sender: UIButton) {} // TODO
-    @IBAction func didPressBackButton(_ sender: UIButton) {} //TODO
+    @IBAction func didPressBackButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
@@ -57,6 +60,8 @@ class DropboxFileDisplayViewController: UIViewController {
         collectionView.contentInset.left = Constants.sideContentInset
         collectionView.contentInset.right = Constants.sideContentInset
         (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing = Constants.interItemSpacing
+        
+        backButton.isEnabled = currentFolderName == "Dropbox root folder" ? false : true
     }
     
     // MARK: - Auxiliary Methods
