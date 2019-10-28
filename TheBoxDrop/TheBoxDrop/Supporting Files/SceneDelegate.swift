@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import SwiftyDropbox
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -20,6 +22,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
+//    let client = DropboxClientsManager.authorizedClient
+//
+//    func handleAPIResponse() {
+//        let fileManager = FileManager.default
+//        let directoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//        let destURL = directoryURL.appendingPathComponent("myTestFile")
+//        let destination: (URL, HTTPURLResponse) -> URL = { temporaryURL, response in
+//            return destURL
+//        }
+//        client!.files.download(path: "/Dropbox/Get Started with Dropbox.pdf", overwrite: true, destination: destination)
+//            .response { response, error in
+//                if let response = response {
+//                    print(response)
+//                } else if let error = error {
+//                    print(error)
+//                }
+//            }
+//            .progress { progressData in
+//                print(progressData)
+//            }
+//    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let authResult = DropboxClientsManager.handleRedirectURL(URLContexts.first!.url) {
+            switch authResult {
+            case .success:
+                print("Success! User is logged into Dropbox.")
+//                handleAPIResponse()
+            case .cancel:
+                print("Authorization flow was manually canceled by user!")
+            case .error(_, let description):
+                print("Error: \(description)")
+            }
+        }
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

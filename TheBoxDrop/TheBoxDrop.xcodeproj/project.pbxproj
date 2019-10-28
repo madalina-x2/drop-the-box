@@ -3,30 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C1369C3A868913DE9CC52DE6 /* Pods_TheBoxDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */; };
-		C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C15235749A9003416B0 /* AppDelegate.swift */; };
-		C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C17235749A9003416B0 /* SceneDelegate.swift */; };
-		C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C19235749A9003416B0 /* ViewController.swift */; };
+		C52F0732235DA488001230B4 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52F0731235DA488001230B4 /* UIViewExtensions.swift */; };
+		C551A89C23589C3200FA655A /* DropboxFileDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A89B23589C3200FA655A /* DropboxFileDisplayViewController.swift */; };
+		C551A8A32358B85700FA655A /* DropboxFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A8A22358B85700FA655A /* DropboxFile.swift */; };
+		C551A8A52358BA3100FA655A /* DropboxFileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C551A8A42358BA3100FA655A /* DropboxFileCollectionViewCell.swift */; };
+		C5AB4D25235A03170017EE7F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB4D24235A03170017EE7F /* StringExtensions.swift */; };
+		C5AB4D27235A03560017EE7F /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */; };
 		C5B86C1D235749A9003416B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1B235749A9003416B0 /* Main.storyboard */; };
 		C5B86C1F235749AB003416B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C1E235749AB003416B0 /* Assets.xcassets */; };
 		C5B86C22235749AB003416B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */; };
+		C5B86C2D2357562F003416B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C19235749A9003416B0 /* ViewController.swift */; };
+		C5B86C2E2357562F003416B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C15235749A9003416B0 /* AppDelegate.swift */; };
+		C5B86C2F2357562F003416B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B86C2A23575406003416B0 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBoxDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.debug.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.debug.xcconfig"; sourceTree = "<group>"; };
+		C52F0731235DA488001230B4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		C551A89B23589C3200FA655A /* DropboxFileDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFileDisplayViewController.swift; sourceTree = "<group>"; };
+		C551A8A22358B85700FA655A /* DropboxFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFile.swift; sourceTree = "<group>"; };
+		C551A8A42358BA3100FA655A /* DropboxFileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFileCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AB4D24235A03170017EE7F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		C5B86C12235749A9003416B0 /* TheBoxDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBoxDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		C5B86C17235749A9003416B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		C5B86C15235749A9003416B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B86C19235749A9003416B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B86C1C235749A9003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B86C1E235749AB003416B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B86C21235749AB003416B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B86C23235749AB003416B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B86C2A23575406003416B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBoxDrop.release.xcconfig"; path = "Target Support Files/Pods-TheBoxDrop/Pods-TheBoxDrop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +60,6 @@
 				AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */,
 				D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,42 @@
 				1EEF36EA018B42EF7D92DF95 /* Pods_TheBoxDrop.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C551A89F2358B7E600FA655A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5B86C19235749A9003416B0 /* ViewController.swift */,
+				C551A89B23589C3200FA655A /* DropboxFileDisplayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C551A8A02358B83400FA655A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C551A8A42358BA3100FA655A /* DropboxFileCollectionViewCell.swift */,
+				C5B86C1B235749A9003416B0 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C551A8A12358B84100FA655A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C551A8A22358B85700FA655A /* DropboxFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5AB4D23235A02FC0017EE7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AB4D24235A03170017EE7F /* StringExtensions.swift */,
+				C5AB4D26235A03560017EE7F /* ArrayExtensions.swift */,
+				C52F0731235DA488001230B4 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C5B86C09235749A9003416B0 = {
@@ -81,10 +128,12 @@
 		C5B86C14235749A9003416B0 /* TheBoxDrop */ = {
 			isa = PBXGroup;
 			children = (
-				C5B86C19235749A9003416B0 /* ViewController.swift */,
-				C5B86C1B235749A9003416B0 /* Main.storyboard */,
-				C5B86C2923574A85003416B0 /* Supporting Files */,
+				C551A8A12358B84100FA655A /* Models */,
+				C551A89F2358B7E600FA655A /* Controllers */,
+				C551A8A02358B83400FA655A /* Views */,
+				C5AB4D23235A02FC0017EE7F /* Extensions */,
 				C5B86C23235749AB003416B0 /* Info.plist */,
+				C5B86C2923574A85003416B0 /* Supporting Files */,
 			);
 			path = TheBoxDrop;
 			sourceTree = "<group>";
@@ -92,9 +141,9 @@
 		C5B86C2923574A85003416B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5B86C15235749A9003416B0 /* AppDelegate.swift */,
-				C5B86C17235749A9003416B0 /* SceneDelegate.swift */,
 				C5B86C1E235749AB003416B0 /* Assets.xcassets */,
+				C5B86C2A23575406003416B0 /* SceneDelegate.swift */,
+				C5B86C15235749A9003416B0 /* AppDelegate.swift */,
 				C5B86C20235749AB003416B0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -215,9 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B86C1A235749A9003416B0 /* ViewController.swift in Sources */,
-				C5B86C16235749A9003416B0 /* AppDelegate.swift in Sources */,
-				C5B86C18235749A9003416B0 /* SceneDelegate.swift in Sources */,
+				C551A89C23589C3200FA655A /* DropboxFileDisplayViewController.swift in Sources */,
+				C5B86C2D2357562F003416B0 /* ViewController.swift in Sources */,
+				C5B86C2E2357562F003416B0 /* AppDelegate.swift in Sources */,
+				C5AB4D25235A03170017EE7F /* StringExtensions.swift in Sources */,
+				C551A8A52358BA3100FA655A /* DropboxFileCollectionViewCell.swift in Sources */,
+				C551A8A32358B85700FA655A /* DropboxFile.swift in Sources */,
+				C5B86C2F2357562F003416B0 /* SceneDelegate.swift in Sources */,
+				C52F0732235DA488001230B4 /* UIViewExtensions.swift in Sources */,
+				C5AB4D27235A03560017EE7F /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,15 +417,18 @@
 			baseConfigurationReference = AD466A8F6CD190B418239C38 /* Pods-TheBoxDrop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
 				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,15 +439,18 @@
 			baseConfigurationReference = D45EE017F02008DE7C1B4B67 /* Pods-TheBoxDrop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BS8C8B5HJ;
 				INFOPLIST_FILE = TheBoxDrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Madalina-Sinca.TheBoxDrop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
